@@ -110,5 +110,25 @@ public class DemostracionDeFuncionamiento {
         System.out.println("(resultado esperado: 'Se quita la radio ... del vehículo')");
         colectivo1.cambiarRadio(null);
         System.out.println();
+
+        // PRUEBA #13: Pruebo asignar precios a los vehículos
+        System.out.println("PRUEBA #13: Pruebo asignar precios a los vehículos");
+        System.out.println("Asigno precio=1000 a autoNuevo1");
+        System.out.println("(resultado esperado: sin errores)");
+        autoNuevo1.setPrecio(1000);
+        System.out.println(autoNuevo1);
+        System.out.println();
+
+        System.out.println("Asigno precio=2000 a autoClasico1");
+        System.out.println("(resultado esperado: sin errores)");
+        autoClasico1.setPrecio(2000);
+        System.out.println(autoClasico1);
+        System.out.println();
+
+        System.out.println("Asigno precio=-1000 a colectivo1");
+        System.out.println("(resultado esperado: error)");
+        colectivo1.setPrecio(-1000);
+        System.out.println(colectivo1);
+        System.out.println();
     }
 }
